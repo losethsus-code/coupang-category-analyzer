@@ -6,6 +6,8 @@ import csv
 import time
 import streamlit as st
 import pandas as pd
+from one_product import setup as setup_one_product
+from one_product_ui import render as render_one_product
 
 from core import (
     connection, flatten_tree, parse_category_rows, save_categories, category_fit,
@@ -31,10 +33,15 @@ h1,h2,h3 {letter-spacing:-0.03em;}
 
 conn=connection()
 setup_search(conn)
+setup_one_product(conn)
 with st.sidebar:
     st.markdown('## COUPANG  \\n SOURCING LAB')
     st.caption('로켓그로스 · 생활용품 중심')
-    page=st.radio('메뉴', ['대시보드','1. 카테고리 필터','2. 랭킹 40개 분석','3. 메인키워드 DB','4. 검색 1P 검증','설정·사용법'],label_visibility='collapsed')
+    mode=st.radio('화면', ['이번 상품 1개', '기존 상세 도구'],label_visibility='collapsed')
+    if mode == '기존 상세 도구':
+        page=st.selectbox('기존 기능', ['대시보드','1. 카테고리 필터','2. 랭킹 40개 분석','3. 메인키워드 DB','4. 검색 1P 검증','설정·사용법'])
+    else:
+        page='이번 상품 1개'
     st.divider()
     st.caption('버전 0.6 · GitHub 통합 업데이트')
     st.caption('실행 주소: http://127.0.0.1:8789')
@@ -45,7 +52,10 @@ leaves=[x for x in cats]
 active=[x for x in leaves if x['fit']=='적합']
 reviewed=[x for x in leaves if x['analysis_score'] is not None]
 
-if page=='대시보드':
+if page=='이번 상품 1개':
+    render_one_product(conn)
+
+elif page=='대시보드':
     st.title('소싱 탐색 대시보드')
     st.caption('카테고리 필터 → 랭킹 40개 → 메인키워드 발굴 → 검색 1페이지 검증')
     cols=st.columns(4)

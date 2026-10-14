@@ -1,15 +1,15 @@
 {
-  "version": "0.6.0",
+  "version": "0.7.0",
   "files": {
     ".gitignore": "73ccff2a70291cd8caedc1db0df2dc65f95668a358727f88fa570144d53c806b",
     "AUTO_START_OFF.bat": "101ce7ad087855479c31ef187819e0eac530c60fcd9d110b4a066f2832ff35d1",
     "AUTO_START_ON.bat": "b9cfced5237750a180af0d8276fa28cb585a9dbb938f06c6f6d5ea87fedf3efd",
     "DIAGNOSE.bat": "3e5df85eed6c905801819e503ce1facaea773d07c94e9f7f362bcdc5ca586034",
-    "README.md": "11a417ad1cd1388770c6bcf0bccee6c5a4d851c3c2efd17e950f59c165033df3",
+    "README.md": "4f04ea8c6b5c51c4b53bee2fd33907476db916eb54a66fb29734514947afcfc9",
     "README_FIRST.md": "3394b201e9fdaa04fc7b4e9cd443ecb28ae8cfc63d94186a1bb95654a764e948",
     "START.bat": "8d941659f5246621f7c71a10037fa9f66df5728469ca2cb85f226c4ada351eac",
     "UPDATE.bat": "74cae1cdfbc9032e0c3c00f0a1f71bd69e46bf100f2f5156cf3349408ce62fb6",
-    "app.py": "efbe0c29019929455bbf54a8c2439c45f0a1949bc25d3894c44e56a159865650",
+    "app.py": "d4054a6fa70ae7e2b425610b0dec05e2dd24f4f2fb4c4d617a0a55e3f5a3423b",
     "autostart.ps1": "0a52c0346b7ba86b57d0d485a8aad2d8041eca6313e9e406ec1f9af616720c4a",
     "core.py": "a2b668630d8059b6f01a5fdf96dbb4cd240a1c441f8d1e5cbbcf0aab71c87b1e",
     "coupang_api.py": "cd6157a67d9e7a6c265b87aa1c84ec5bfa65cd7ba54ca5e35677faf34c2f5ec4",
@@ -25,6 +25,9 @@
     "tests/test_coupang_api.py": "4b1a57893237d8ba51ae218dda910d03d664e307da66bdffe4780b067e11b975",
     "tests/test_e2e.py": "05fa31b0f402c4a3aa27f0b41750f7a3c7b8e7e406923b503264f1c93a1b5cdb",
     "tests/test_search_1p.py": "3b32bb04e88c17b5dec4ed1287b9340780a11a8a892dfa1d9c71c01d2081f14b",
-    "update.ps1": "924ae9d762649d889be668084f21d3121076f8d67e09ab19bd252d5c4f2bf907"
+    "update.ps1": "924ae9d762649d889be668084f21d3121076f8d67e09ab19bd252d5c4f2bf907",
+    "one_product.py": "ed1115dcd7dde1994a820b2e0a7bfec091e6e6f376edb3d45b2064122036564a",
+    "one_product_ui.py": "7e7931a9bb466f1bbbb32b6e2898a5b7755356afbfe07fa8447bc589e1bf8e89",
+    "tests/test_one_product.py": "ac06fabe9d120fe09499e918d2945fcd026a96395b1c5c5644d82968e92e1ef0"
   }
 }
