@@ -1,0 +1,55 @@
+{
+  "code": "SUCCESS",
+  "data": {
+    "name": "ROOT",
+    "displayItemCategoryCode": 0,
+    "status": "ACTIVE",
+    "child": [
+      {
+        "name": "생활용품",
+        "displayItemCategoryCode": 999000,
+        "status": "ACTIVE",
+        "child": [
+          {
+            "name": "수납/정리",
+            "displayItemCategoryCode": 999001,
+            "status": "ACTIVE",
+            "child": [
+              {
+                "name": "화장품 정리함",
+                "displayItemCategoryCode": 999002,
+                "status": "ACTIVE",
+                "child": []
+              },
+              {
+                "name": "신발 정리대",
+                "displayItemCategoryCode": 999003,
+                "status": "ACTIVE",
+                "child": []
+              },
+              {
+                "name": "대형 수납장",
+                "displayItemCategoryCode": 999004,
+                "status": "ACTIVE",
+                "child": []
+              },
+              {
+                "name": "욕실용품",
+                "displayItemCategoryCode": 999005,
+                "status": "ACTIVE",
+                "child": [
+                  {
+                    "name": "슬리퍼 걸이",
+                    "displayItemCategoryCode": 999006,
+                    "status": "ACTIVE",
+                    "child": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
